@@ -1,8 +1,0 @@
-Input: fever, cough
-Output: Possible diagnoses: flu
-
-Input: sore throat, fever
-Output: Possible diagnoses: strep throat
-
-Input: headache, sensitivity to light
-Output: Possible diagnoses: migraine
