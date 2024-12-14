@@ -1,0 +1,3 @@
+Possible diagnoses: flu
+Possible diagnoses: strep throat
+Possible diagnoses: migraine

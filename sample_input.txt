@@ -1,0 +1,3 @@
+fever, cough
+sore throat, fever
+headache, sensitivity to light
