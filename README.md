@@ -5,3 +5,7 @@ This GitHub repository contains a simple rule-based medical diagnosis system tha
 This GitHub is made by:
 - Adrian Aziz Santoso (NRP 5025221229)
 - Andreas Reynard Samsico (NRP 5025221020)
+- Cavel Ferrari (NRP 5025211198)
+- Marco Marcello Hugo (NRP 5025221102)
+- Schaquille Devlin Aristanto (NRP 5025211211)
+to fulfill the assignment for Knowledge-Based System Engineering - class C
