@@ -1,5 +1,5 @@
 import unittest
-from medical_diagnosis_system import diagnosis
+import diagnosis
 
 class TestMedicalDiagnosis(unittest.TestCase):
     
