@@ -19,3 +19,12 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+### Steps to Create the Repository
+
+1. **Create a New Repository** on GitHub.
+2. **Clone the Repository** to your local machine.
+3. **Add Your Files**: Place the `README.md`, `main.py`, and any other necessary files in the cloned directory.
+4. **Commit Your Changes**:
+   ```bash
+   git add .
