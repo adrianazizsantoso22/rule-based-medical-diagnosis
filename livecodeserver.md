@@ -1,4 +1,4 @@
-### Steps to Create the Repository:
+### Steps to Create the Repository
 
 1. **Create a New Repository** on GitHub.
 2. **Clone the Repository** to your local machine.
