@@ -1,5 +1,7 @@
 # Rule-Based Medical Diagnosis System
 
+from diagnosis import diagnosis
+
 # Knowledge Base: List of rules in the form of (condition, conclusion)
 rules = [
     ({"fever", "cough"}, "flu"),
