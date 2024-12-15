@@ -2,7 +2,6 @@ import unittest
 from diagnosis import diagnosis
 
 class TestAdditionalMedicalDiagnosis(unittest.TestCase):
-    
     def test_multiple_conditions(self):
         symptoms = {"fever", "cough", "sore throat"}
         self.assertIn("flu", diagnosis(symptoms))
