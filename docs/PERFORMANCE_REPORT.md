@@ -1,8 +1,3 @@
-### 3. **Performance Metrics Report**
-Once you complete performance evaluations, you could create a report summarizing the findings.
-
-**Example `PERFORMANCE_REPORT.md`:**
-```markdown
 # Performance Metrics Report
 
 ## Overview
