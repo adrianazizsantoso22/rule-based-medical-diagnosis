@@ -1,6 +1,3 @@
-This file will provide information about how you plan to evaluate the performance of your medical diagnosis system.
-
-```markdown
 # Performance Evaluation
 
 ## Purpose
