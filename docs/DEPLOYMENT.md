@@ -1,8 +1,3 @@
-### DEPLOYMENT.md
-
-This file will guide users on how to deploy your medical diagnosis system in different environments.
-
-```markdown
 # Deployment Instructions
 
 ## Prerequisites
