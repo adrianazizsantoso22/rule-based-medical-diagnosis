@@ -2,4 +2,4 @@
 
 from .diagnosis import diagnosis  # Import the diagnosis function
 
-__all__ = ['diagnosis']  # Specifies what is imported when 'from medical_diagnosis_system import *' is used
+__all__ = ['diagnosis']  # Restrict wildcard imports to include only 'diagnosis'
