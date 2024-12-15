@@ -2,7 +2,6 @@ import unittest
 from diagnosis import diagnosis
 
 class TestMedicalDiagnosis(unittest.TestCase):
-    
     def test_flu(self):
         symptoms = {"fever", "cough"}
         self.assertIn("flu", diagnosis(symptoms))
