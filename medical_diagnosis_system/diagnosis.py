@@ -1,27 +1,25 @@
-# medical_diagnosis_system/diagnosis.py
-
 def diagnosis(symptoms):
     """
-    Function to diagnose the disease based on symptoms.
+    Fungsi untuk menentukan diagnosis berdasarkan gejala.
     
     Args:
-        symptoms (set): A set of symptoms provided by the user.
+        symptoms (set): Set gejala yang dimasukkan pengguna.
     
     Returns:
-        set: A set of diagnoses matching the symptoms.
+        list: Daftar kemungkinan diagnosis berdasarkan gejala.
     """
-    rules = [
-        ({"fever", "cough"}, "flu"),
-        ({"sore throat", "fever"}, "strep throat"),
-        ({"headache", "sensitivity to light"}, "migraine"),
-        ({"rash", "fever"}, "chickenpox"),
-        ({"shortness of breath", "wheezing"}, "asthma"),
-    ]
-    
-    possible_diagnoses = set()
-    
-    for conditions, conclusion in rules:
-        if conditions.issubset(symptoms):
-            possible_diagnoses.add(conclusion)
-    
-    return possible_diagnoses
+    # Aturan diagnosis
+    rules = {
+        "cold": {"fever", "cough", "sore throat"},
+        "flu": {"fever", "cough", "sore throat", "body ache"},
+        "chickenpox": {"fever", "rash", "fatigue"},
+        "measles": {"fever", "rash", "cough", "conjunctivitis"},
+    }
+
+    # Mengecek gejala yang cocok dengan setiap aturan
+    results = []
+    for condition, condition_symptoms in rules.items():
+        if symptoms & condition_symptoms == condition_symptoms:
+            results.append(condition)
+
+    return results
