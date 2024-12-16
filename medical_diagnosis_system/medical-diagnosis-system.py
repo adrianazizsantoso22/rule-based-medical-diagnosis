@@ -1,41 +1,29 @@
-# Rule-Based Medical Diagnosis System
-
-from diagnosis import diagnosis
-
-# Knowledge Base: List of rules in the form of (condition, conclusion)
-rules = [
-    ({"fever", "cough"}, "flu"),
-    ({"sore throat", "fever"}, "strep throat"),
-    ({"headache", "sensitivity to light"}, "migraine"),
-    ({"rash", "fever"}, "chickenpox"),
-    ({"shortness of breath", "wheezing"}, "asthma"),
-]
-
-def diagnosis(symptoms):
-    """Function to diagnose the disease based on symptoms."""
-    possible_diagnoses = set()
-    
-    for rule in rules:
-        conditions, conclusion = rule
-        if conditions.issubset(symptoms):
-            possible_diagnoses.add(conclusion)
-    
-    return possible_diagnoses
+from medical_diagnosis_system.diagnosis import diagnosis
 
 def main():
-    """Main function to run the diagnosis system."""
-    print("Welcome to the Medical Diagnosis System!")
-    symptoms_input = input("Enter the patient's symptoms (comma-separated): ")
-    symptoms = {symptom.strip().lower() for symptom in symptoms_input.split(",")}
+    print("Selamat datang di Sistem Diagnosis Medis!")
+    print("Masukkan gejala Anda, pisahkan dengan koma (misalnya: fever, cough, rash).")
+    symptoms_input = input("Gejala Anda: ").strip()
 
+    # Validasi input
+    if not symptoms_input:
+        print("Tidak ada gejala yang dimasukkan. Silakan coba lagi.")
+        return
+
+    # Proses input menjadi set gejala
+    symptoms = set(symptom.strip().lower() for symptom in symptoms_input.split(","))
+
+    # Panggil fungsi diagnosis
     results = diagnosis(symptoms)
-    
+
+    # Tampilkan hasil
     if results:
-        print("Possible diagnoses based on the symptoms provided:")
-        for diagnosis in results:
-            print(f"- {diagnosis}")
+        print("\nBerdasarkan gejala yang Anda masukkan, berikut adalah kemungkinan diagnosis:")
+        for condition in results:
+            print(f"- {condition}")
     else:
-        print("No possible diagnoses found for the provided symptoms.")
+        print("\nGejala yang dimasukkan tidak cocok dengan diagnosis apa pun.")
+        print("Silakan konsultasikan dengan dokter untuk pemeriksaan lebih lanjut.")
 
 if __name__ == "__main__":
     main()
