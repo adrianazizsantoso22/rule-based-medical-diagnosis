@@ -25,7 +25,7 @@ to fulfill the assignment for Knowledge-Based System Engineering - class C
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/medical-diagnosis-system.git
+   git clone https://github.com/adrianazizsantoso22/rule-based-medical-diagnosis-system
    ```
 2. Navigate into the project directory:
    ```bash
