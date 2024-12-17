@@ -65,5 +65,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 For any questions or support, please contact:
-- Adrian Aziz Santoso: your.email@example.com
-- Andreas Reynard Samsico: your.email@example.com
+- Adrian Aziz Santoso: adrianazizsantoso@gmail.com
